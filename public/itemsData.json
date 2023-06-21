@@ -1,0 +1,44 @@
+[
+    {
+        "Set": "Still Life Women 1",
+        "Type": "permanent",
+        "SetLocation": "Central Eastern South America",
+        "Category": "still life1",
+        "NextAvailability": "Mon,31/01-10:30"
+    },
+    {
+        "Set": "Still Life Women 2",
+        "Type": "temporary",
+        "SetLocation": "Central Eastern South America",
+        "Category": "still life1",
+        "NextAvailability": "Mon,31/01-10:30"
+    },
+    {
+        "Set": "Still Life Women 3",
+        "Type": "permanent",
+        "SetLocation": "Central Eastern South America",
+        "Category": "still life2",
+        "NextAvailability": "Mon,31/01-10:30"
+    },
+    {
+        "Set": "Still Life Women 4",
+        "Type": "temporary",
+        "SetLocation": "Central Eastern South America",
+        "Category": "still life2",
+        "NextAvailability": "Mon,31/01-10:30"
+    },
+    {
+        "Set": "Still Life Women 5",
+        "Type": "temporary",
+        "SetLocation": "Central Eastern South America",
+        "Category": "still life1",
+        "NextAvailability": "Mon,31/01-10:30"
+    },
+    {
+        "Set": "Still Life Women 6",
+        "Type": "permanent",
+        "SetLocation": "Central Eastern South America",
+        "Category": "still life2",
+        "NextAvailability": "Mon,31/01-10:30"
+    }
+]
