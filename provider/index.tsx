@@ -7,7 +7,7 @@ import { useFilters } from '@hooks/useFilters';
 import useQuery from '@hooks/useQuery';
 
 
-export default function ItemsProvider({
+export default function MainProvider({
     children,
 }: {
     children: React.ReactNode

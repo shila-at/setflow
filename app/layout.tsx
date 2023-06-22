@@ -1,6 +1,6 @@
 
 import Head from 'next/head';
-import ItemsProvider from '@/provider';
+import MainProvider from '@/provider';
 
 
 export default function ItemsLayout({
@@ -10,13 +10,13 @@ export default function ItemsLayout({
 }) {
 
   return (
-    <ItemsProvider>
+    <MainProvider>
       <Head>
         <title>Items</title>
       </Head>
 
       {children}
-    </ItemsProvider>
+    </MainProvider>
 
   )
 }
