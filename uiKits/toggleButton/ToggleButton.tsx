@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 
-import { colorPalette } from '@components/colors';
+import { colorPalette } from '@uiKits/colors';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 

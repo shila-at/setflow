@@ -6,7 +6,7 @@ import { UtilsHelper } from '../../utils/UtilsHelper';
 import { SelectChangeEvent } from '@mui/material';
 import arrowDownIcon from '@icons/downArrow.svg';
 import MenuItem from '@mui/material/MenuItem';
-import Select from '@components/select/Select';
+import Select from '@uiKits/select/Select';
 import Stack from '@mui/material/Stack';
 
 const PopoverPaperStyle = {

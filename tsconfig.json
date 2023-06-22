@@ -27,26 +27,29 @@
       "@/*": [
         "./*"
       ],
-      "@components/*": [
-        "./app/components/*"
+      "@uiKits/*": [
+        "./uiKits/*"
       ],
       "@api/*": [
-        "./app/api/*"
+        "./api/*"
       ],
       "@utils/*": [
-        "./app/utils/*"
+        "./utils/*"
       ],
       "@hooks/*": [
-        "./app/hooks/*"
+        "./hooks/*"
       ],
       "@context/*": [
-        "./app/context/*"
+        "./context/*"
       ],
       "@icons/*": [
         "./public/icons/*"
       ],
       "@public/*": [
         "./public/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
       ],
     }
   },

@@ -2,11 +2,11 @@ import { useState, useContext } from 'react';
 import { ItemContext } from '@context/ItemContext';
 import Image from 'next/image';
 
-import { colorPalette } from '../../components/colors';
+import { colorPalette } from '../../uiKits/colors';
 import { SelectChangeEvent } from '@mui/material';
 import arrowDownIcon from '@icons/downArrow.svg';
 import MenuItem from '@mui/material/MenuItem';
-import Select from '@components/select/Select';
+import Select from '@uiKits/select/Select';
 import Stack from '@mui/material/Stack';
 import { UtilsHelper } from '../../utils/UtilsHelper';
 

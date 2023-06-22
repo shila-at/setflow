@@ -16,7 +16,7 @@ import {
     Stack,
     Typography
 } from '@mui/material';
-import { colorPalette } from '@components/colors';
+import { colorPalette } from '@uiKits/colors';
 import { useItems } from '@api/useItemsApi';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import MuiTable from '@mui/material/Table';

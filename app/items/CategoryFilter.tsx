@@ -1,3 +1,4 @@
+
 import { useState, useContext } from 'react';
 import Image from 'next/image';
 import { ItemContext } from '@context/ItemContext';
@@ -5,7 +6,7 @@ import { SelectChangeEvent } from '@mui/material';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import arrowDownIcon from '@icons/downArrow.svg';
 import MenuItem from '@mui/material/MenuItem';
-import Select from '@components/select/Select';
+import Select from '@uiKits/select/Select';
 import Stack from '@mui/material/Stack';
 
 const PopoverPaperStyle = {
@@ -38,7 +39,7 @@ const CategoryFilter = () => {
     const { changeCategoryFilter } = useContext(ItemContext);
 
     const handleChangeType = (event: SelectChangeEvent<any>) => {
-       
+
         if (event.target.value === 'none') {
             setFilter('Category: none');
             changeCategoryFilter('');

@@ -1,6 +1,6 @@
 
 import { Stack, Divider } from '@mui/material';
-import { colorPalette } from '@components/colors';
+import { colorPalette } from '@uiKits/colors';
 import Sort from './Sort';
 import SetFilter from './TypeFilter';
 import CategoryFilter from './CategoryFilter';
