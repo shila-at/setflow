@@ -1,7 +1,7 @@
 
 import { useState, useContext } from 'react';
 import Image from 'next/image';
-import { ItemContext } from '@context/ItemContext';
+import { FilterContext } from '@/context/FilterContext';
 import { SelectChangeEvent } from '@mui/material';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import arrowDownIcon from '@icons/downArrow.svg';
@@ -36,7 +36,7 @@ const DropDownIcon = ({ ...other }) => (
 const CategoryFilter = () => {
 
     const [filter, setFilter] = useState('Category: none');
-    const { changeCategoryFilter } = useContext(ItemContext);
+    const { changeCategoryFilter } = useContext(FilterContext);
 
     const handleChangeType = (event: SelectChangeEvent<any>) => {
 

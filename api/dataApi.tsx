@@ -2,11 +2,8 @@
 import itemsData from '@public/itemsData.json';
 import {
     useQuery,
-    useQueryClient,
-    QueryClient,
-    QueryClientProvider,
 } from '@tanstack/react-query';
-import { UtilsHelper } from '../utils/UtilsHelper';
+import { UtilsHelper } from '@utils/UtilsHelper';
 
 interface Filters {
     type: string,
@@ -21,11 +18,11 @@ const fetchItems = async ({ type, sort, category }: Filters) => {
     return !!sort && sort === UtilsHelper.Sort[1] ? _data.reverse() : _data
 }
 
-const useItems = ({ type, sort, category }: Filters) => {
+const GetItems = ({ type, sort, category }: Filters) => {
     return useQuery({
         queryKey: ['items', { type, sort, category }],
         queryFn: () => fetchItems({ type, sort, category }),
     })
 }
 
-export { useItems, fetchItems }
+export { GetItems, fetchItems }

@@ -1,5 +1,5 @@
 import { FC, useEffect, useState, useContext } from 'react';
-import { ItemContext } from '@context/ItemContext';
+import { FilterContext } from '@/context/FilterContext';
 import Image from 'next/image';
 
 import {
@@ -17,7 +17,7 @@ import {
     Typography
 } from '@mui/material';
 import { colorPalette } from '@uiKits/colors';
-import { useItems } from '@api/useItemsApi';
+import { GetItems } from '@/api/dataApi';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import MuiTable from '@mui/material/Table';
 import arrowRightIcon from '@icons/arrowRight.svg';
@@ -78,8 +78,8 @@ const Table: FC<any> = () => {
 
     const [data, setData] = useState<any>(() => []);
     const [filters, setFilters] = useState({ type: '', sort: '', category: '' });
-    const { type, sort, category } = useContext(ItemContext);
-    const { status, data: apiData, error, isFetching } = useItems(filters);
+    const { type, sort, category } = useContext(FilterContext);
+    const { status, data: apiData, error, isFetching } = GetItems(filters);
 
     const table = useReactTable({
         data,

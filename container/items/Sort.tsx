@@ -1,14 +1,13 @@
 import { useState, useContext } from 'react';
-import { ItemContext } from '@context/ItemContext';
+import { FilterContext } from '@/context/FilterContext';
 import Image from 'next/image';
 
-import { colorPalette } from '../../uiKits/colors';
 import { SelectChangeEvent } from '@mui/material';
 import arrowDownIcon from '@icons/downArrow.svg';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@uiKits/select/Select';
 import Stack from '@mui/material/Stack';
-import { UtilsHelper } from '../../utils/UtilsHelper';
+import { UtilsHelper } from '@utils/UtilsHelper';
 
 const PopoverPaperStyle = {
     background: '#fff',
@@ -37,7 +36,7 @@ const DropDownIcon = ({ ...other }) => (
 const Sort = () => {
 
     const [filter, setFilter] = useState('sort by: none');
-    const { changeSortFilter } = useContext(ItemContext);
+    const { changeSortFilter } = useContext(FilterContext);
 
     const handleChangeType = (event: SelectChangeEvent<any>) => {
 

@@ -1,8 +1,8 @@
 import { useState, useContext } from 'react';
-import { ItemContext } from '@context/ItemContext';
+import { FilterContext } from '@/context/FilterContext';
 import Image from 'next/image';
 
-import { UtilsHelper } from '../../utils/UtilsHelper';
+import { UtilsHelper } from '@utils/UtilsHelper';
 import { SelectChangeEvent } from '@mui/material';
 import arrowDownIcon from '@icons/downArrow.svg';
 import MenuItem from '@mui/material/MenuItem';
@@ -36,18 +36,18 @@ const DropDownIcon = ({ ...other }) => (
 const TypeFilter = () => {
 
     const [filter, setFilter] = useState('Type: none');
-    const { changeTypeFilter } = useContext(ItemContext);
+    const { changeTypeFilter } = useContext(FilterContext);
 
     const handleChangeType = (event: SelectChangeEvent<any>) => {
-       
-        if(event.target.value==='none'){
+
+        if (event.target.value === 'none') {
             setFilter('Type: none');
             changeTypeFilter('');
-        }else{
+        } else {
             setFilter(`Type: ${event.target.value as string}`);
             changeTypeFilter(event.target.value as string);
         }
-        
+
     };
 
     return (
@@ -86,7 +86,7 @@ const TypeFilter = () => {
                     }
                 }}
             >
-            
+
                 {
                     UtilsHelper.TypeFilter.map((_el: any, _idx: number) => {
 
