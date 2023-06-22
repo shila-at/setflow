@@ -1,4 +1,4 @@
-
+'use client';
 import { Stack, Divider } from '@mui/material';
 import { colorPalette } from '@uiKits/colors';
 import Sort from './Sort';

@@ -1,7 +1,7 @@
 
 import { useState, useContext } from 'react';
 import Image from 'next/image';
-import { FilterContext } from '@/context/FilterContext';
+import { FilterContext } from '@context/FilterContext';
 import { SelectChangeEvent } from '@mui/material';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import arrowDownIcon from '@icons/downArrow.svg';

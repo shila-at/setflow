@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
     "incremental": true,
     "plugins": [
       {
@@ -24,9 +25,6 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ],
       "@uiKits/*": [
         "./uiKits/*"
       ],
@@ -53,6 +51,9 @@
       ],
       "@container/*": [
         "./container/*"
+      ],
+      "@provider/*": [
+        "./provider/*"
       ],
     }
   },

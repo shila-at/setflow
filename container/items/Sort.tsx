@@ -1,5 +1,6 @@
+
 import { useState, useContext } from 'react';
-import { FilterContext } from '@/context/FilterContext';
+import { FilterContext } from '@context/FilterContext';
 import Image from 'next/image';
 
 import { SelectChangeEvent } from '@mui/material';

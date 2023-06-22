@@ -1,7 +1,4 @@
-
-import Head from 'next/head';
-import MainProvider from '@/provider';
-
+import MainProvider from '@provider/index';
 
 export default function ItemsLayout({
   children,
@@ -10,13 +7,14 @@ export default function ItemsLayout({
 }) {
 
   return (
-    <MainProvider>
-      <Head>
-        <title>Items</title>
-      </Head>
+    <html lang="en">
+      <body>
+        <MainProvider>
+          {children}
+        </MainProvider>
+      </body>
+    </html>
 
-      {children}
-    </MainProvider>
 
   )
 }
