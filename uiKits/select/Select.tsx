@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles';
-import MuiSelect from '@mui/material/Select';
 import { colorPalette } from '@uiKits/colors';
+import MuiSelect from '@mui/material/Select';
 
 export const Select = styled(MuiSelect)(() => ({
     height: 40,

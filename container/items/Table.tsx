@@ -1,8 +1,6 @@
 
 import { FC, useEffect, useState, useContext } from 'react';
-import { FilterContext } from '@context/FilterContext';
 import Image from 'next/image';
-
 import {
     createColumnHelper,
     flexRender,
@@ -17,6 +15,8 @@ import {
     Stack,
     Typography
 } from '@mui/material';
+
+import { FilterContext } from '@context/FilterContext';
 import { colorPalette } from '@uiKits/colors';
 import { GetItems } from '@api/dataApi';
 import { UtilsHelper } from '@utils/UtilsHelper';

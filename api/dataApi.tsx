@@ -1,10 +1,7 @@
 
 import itemsData from '@public/itemsData.json';
-import {
-    useQuery,
-} from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { UtilsHelper } from '@utils/UtilsHelper';
-
 interface Filters {
     type: string,
     sort: string,

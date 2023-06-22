@@ -1,8 +1,8 @@
 
 import { useState, useContext } from 'react';
-import { FilterContext } from '@context/FilterContext';
 import Image from 'next/image';
 
+import { FilterContext } from '@context/FilterContext';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import { SelectChangeEvent } from '@mui/material';
 import arrowDownIcon from '@icons/downArrow.svg';

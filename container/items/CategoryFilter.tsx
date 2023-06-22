@@ -1,13 +1,14 @@
 
 import { useState, useContext } from 'react';
 import Image from 'next/image';
+
 import { FilterContext } from '@context/FilterContext';
 import { SelectChangeEvent } from '@mui/material';
 import { UtilsHelper } from '@utils/UtilsHelper';
 import arrowDownIcon from '@icons/downArrow.svg';
 import MenuItem from '@mui/material/MenuItem';
-import Select from '@uiKits/select/Select';
 import Stack from '@mui/material/Stack';
+import Select from '@uiKits/select/Select';
 
 const PopoverPaperStyle = {
     background: '#fff',
