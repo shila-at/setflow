@@ -51,6 +51,9 @@
       "@styles/*": [
         "./styles/*"
       ],
+      "@container/*": [
+        "./container/*"
+      ],
     }
   },
   "include": [
